@@ -1,0 +1,18 @@
+.page-waterbra {
+    font-family: "Noto Sans TC", sans-serif;
+    @media screen and (max-width: 599px){
+        margin-top: 80px;
+    }
+    *{
+        line-height: 1.5;
+    }
+    p{
+        margin: 0;
+    }
+}
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+}

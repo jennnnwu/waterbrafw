@@ -1,0 +1,68 @@
+// container
+.container{
+    max-width: 1280px;
+    margin: 0 auto;
+    text-align: center;
+    @media screen and (max-width: 976px){
+        max-width: 414px;
+    }
+}
+
+// font weight
+.fw-light{
+    font-weight: 300!important;
+}
+.fw-normal{
+    font-weight: 400!important;
+}
+.fw-medium{
+    font-weight: 500!important;
+}
+.fw-bold{
+    font-weight: 700!important;
+}
+
+// text color
+.text-primary-1{
+    color: $color-primary-1!important;
+}
+.text-primary-2{
+    color: $color-primary-2!important;
+}
+//text setting
+.text-vertical{
+    writing-mode: vertical-rl;
+}
+
+//block color
+.bg-primary-1{
+    background-color: $color-primary-1!important;
+}
+.bg-primary-2{
+    background-color: $color-primary-2!important;
+}
+
+//flex
+.d-flex{
+    display: flex;
+}
+.hide-pc{
+    display: none;
+    @media screen and (max-width: 976px){
+        display: block;
+    }
+}
+.hide-mb{
+    display: block;
+    @media screen and (max-width: 976px){
+        display: none;
+    }
+}
+
+//animate
+[data-aos] {
+    visibility: hidden;
+  }
+[data-aos].aos-animate {
+    visibility: visible;
+}

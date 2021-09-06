@@ -1,0 +1,109 @@
+.vControl {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    background-image: url(../images/Vd_icon.svg);
+    background-size: 88px 88px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity .2s linear;
+    @media screen and (max-width: 976px){
+        background-size: 50px 50px;
+    }
+}
+.vControl iframe {
+    width: 100%;
+    height: 100%;
+}
+.btn-wrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    span{
+        font-size: 19px;
+        color: #747474;
+        margin-right: 60px;
+        @media screen and (max-width: 976px){
+            font-size: 12px;
+            margin-right: 28px;
+        }
+        @media screen and (max-width: 414px){
+            margin-right: 8px;
+        }
+    }
+    &.btn-left{
+        text-align: left;
+    }
+    &.btn-right{
+        text-align: right;
+    }
+}
+.btn{
+    display: inline-block;
+    @media screen and (max-width: 976px){
+        max-width: 109px;
+    }
+}
+
+
+//title
+.page-waterbra{
+    .title-reset{
+        padding: 0;
+        font-family: "Noto Sans TC", serif;
+        color: $gray-1;
+        font-weight: normal;
+        line-height: 1.5;
+    }
+    .title-h2{
+        font-size: 32px;
+        font-weight: 300;
+        color: $gray-1;
+        margin-bottom: 62px;
+        position: relative;
+        img{
+            display: inline-block;
+        }
+        @media screen and (max-width: 976px){
+            margin-bottom: 36px;
+            font-size: 23px;
+        }
+    }
+    .title-h2-sub{
+        color: $color-primary-2;
+        font-size: 21px;
+        font-weight: normal;
+        margin-bottom: 6px;
+        text-align: center;
+        display: block;
+        position: relative;
+        @media screen and (max-width: 976px){
+            font-size: 16px;
+            margin-bottom: 4px;
+        }
+    }
+    .title-h3{}
+    .title-h4{
+        color: $color-primary-2;
+        font-weight: 500;
+        font-size: 21px;
+        margin-bottom: 12px;
+        letter-spacing: 1.5px;
+        @media screen and (max-width: 976px){
+            font-size: 16px;
+            margin-bottom: 8px;
+        }
+    }
+    .info{
+        font-size: 19px;
+        color: #4A4A4A;
+        text-align: center;
+        letter-spacing: 1.5px;
+        @media screen and (max-width: 976px){
+            font-size: 12px;
+        }
+    }
+}

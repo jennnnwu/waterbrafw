@@ -1,0 +1,73 @@
+.owl-theme .owl-dots .owl-dot span{
+    width: 23px;
+    height: 23px;
+    border-radius: 20px;
+    margin: 5px 15px;
+    background: #fff;
+    border: 1px solid #FDC453;
+    transition: all .2s ease;
+    @media screen and (max-width: 976px){
+        width: 14px;
+        height: 14px;
+        margin: 5px 10px;
+    }
+}
+
+.owl-theme .owl-dots .owl-dot.active span, 
+.owl-theme .owl-dots .owl-dot:hover span{
+    border: 1px solid #fff;
+    background: #FDC453;
+}
+
+
+.owl-theme .owl-nav{
+    position: absolute;
+    // top: 50px;
+    top: calc( (100% - 73px) / 2 * 0.7629 - 6px);
+    left: 0;
+    height: 45px;
+    width: 100%;
+    margin: 0;
+    padding: 0 10px;
+}
+
+.owl-carousel .owl-nav button.owl-next, 
+.owl-carousel .owl-nav button.owl-prev{
+    width: 11px;
+    height: 47px;
+    margin: 0;
+    position: absolute;
+    background-size: cover;
+}
+
+.owl-carousel .owl-nav button.owl-prev{
+    margin-right: 10px;
+    left: 10px;
+    background-image: url(../images/carousel/prev.svg);
+    &:hover{
+        background-image: url(../images/carousel/prev.svg);
+        background-color: transparent;
+    }
+}
+
+.owl-carousel .owl-nav button.owl-next{
+    margin-left: 10px;
+    right: 10px;
+    background-image: url(../images/carousel/next.svg);
+    &:hover{
+        background-image: url(../images/carousel/next.svg);
+        background-color: transparent;
+    }
+}
+
+.owl-stage-outer { 
+    overflow: visible;
+}
+    
+.owl-item {
+    opacity: 0;
+    transition: opacity 500ms;
+}
+.owl-item.active {
+    opacity: 1;
+}
